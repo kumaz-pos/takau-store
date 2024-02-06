@@ -22,7 +22,7 @@ async function ProductSection() {
          {
             data.data.map((item)=>{
                 
-                return <Product item={item} addToCart={addToCart}/>
+                return <Product key={item.id} item={item} addToCart={addToCart}/>
             })
          }
        

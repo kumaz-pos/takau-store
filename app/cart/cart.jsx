@@ -128,7 +128,7 @@ async function onCashPayment() {
           <div class="alert alert-info alert-dismissible fade show text-center mb-30"><span class="alert-close" data-dismiss="alert"></span><i class="fe-icon-award"></i>&nbsp;&nbsp;With this purchase you will earn <strong>2,549</strong> Reward Points.</div>
         {
           data.map((item)=>{
-return <div class="cart-item d-md-flex justify-content-between">
+return <div key={item.id} class="cart-item d-md-flex justify-content-between">
   <span class="remove-item">
     <form action={removeItem}>
    
