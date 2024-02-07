@@ -83,7 +83,7 @@ async function onCheckout() {
           
     
   
-  // console.log(data);
+
    
   } catch (error) {
       console.log(error);
