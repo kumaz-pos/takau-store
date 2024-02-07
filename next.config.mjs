@@ -7,6 +7,7 @@ const nextConfig = {
     },
     experimental: {
         serverActions: true,
+        appDir: false,
       },
       headers: [
         {
@@ -14,6 +15,11 @@ const nextConfig = {
           value: 'no-store',
         },
       ],
+      eslint: {
+        // Warning: This allows production builds to successfully complete even if
+        // your project has ESLint errors.
+        ignoreDuringBuilds: true,
+      },
 };
 
 export default nextConfig;

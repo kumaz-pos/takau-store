@@ -6,8 +6,8 @@ async function getPollStatus(pollUrl) {
   try {
    
   
-  const response=   await axios.get(`http://localhost:3000/api/payment?url=${pollUrl}`);
-console.log(response);
+  const response=   await axios.get(`${process.env.LOCALHOST}/api/payment?url=${pollUrl}`);
+
   return response
   
   } catch (error) {

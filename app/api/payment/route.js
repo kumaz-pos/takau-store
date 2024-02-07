@@ -17,7 +17,7 @@ export async function POST(req,res) {
 
 
 
-  paynow.returnUrl = "http://localhost:3000";
+  paynow.returnUrl = `${process.env.LOCALHOST}`;
  
     items.map((item)=>{
       payment.add(`${item.part_name + " " +  item.part_name}`,item.item_price);
@@ -107,7 +107,7 @@ export async function GET(req,res) {
  
  
  
- paynow.returnUrl = "http://localhost:3000/cart";
+ paynow.returnUrl = `${process.env.LOCALHOST}/cart`;
   
   
  
