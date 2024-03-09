@@ -10,6 +10,7 @@ import { useState,useEffect } from 'react'
 
 import { useRouter } from 'next/navigation'
 import { handleChange,removeItem } from '@/server-actions/addToCart';
+import QuantityComponent from './quantityComponent'
 
 
  function Cart({data,error}) {
@@ -125,7 +126,7 @@ async function onCashPayment() {
    
       <div class="container pb-5 mb-2">
         
-          <div class="alert alert-info alert-dismissible fade show text-center mb-30"><span class="alert-close" data-dismiss="alert"></span><i class="fe-icon-award"></i>&nbsp;&nbsp;With this purchase you will earn <strong>2,549</strong> Reward Points.</div>
+
         {
           data.map((item)=>{
 return <div key={item.id} class="cart-item d-md-flex justify-content-between">
@@ -151,8 +152,8 @@ return <div key={item.id} class="cart-item d-md-flex justify-content-between">
     <div class="cart-item-label">Quantity</div>
     <div class="count-input">
   <form action={handleChange}>
-  <input  class="form-control form-control-sm my-2 mr-3" onChange={(e)=>setquantity(e.target.value)}  value={quantity}  type="number" name='quantity'  placeholder= {item.quantity} required=""/>                 
   
+  <QuantityComponent itemQuantity={item.quantity} />
                   
   <input hidden  class="form-control form-control-sm my-2 mr-3" type="text" name='id' value={item.id} placeholder= {item.id} required=""/>                 
   <input hidden   class="form-control form-control-sm my-2 mr-3" type="text" name='price' value= {item.price} placeholder= {item.price} required=""/>                 
@@ -196,7 +197,7 @@ return <div key={item.id} class="cart-item d-md-flex justify-content-between">
         
           <hr class="my-2"/>
           <div class="row pt-3 pb-5 mb-2">
-          <div>
+          <div style={{display:"flex",gap:"0.5rem"}}>
               <label htmlFor="">Cash on delivery</label>
               <input value="cash on delivery"  onChange={(e)=>setpaymentMethod(e.target.value)} name='payment-method' type="radio" />
               <label htmlFor="">Paynow</label>
@@ -206,7 +207,7 @@ return <div key={item.id} class="cart-item d-md-flex justify-content-between">
                 
               {
                 paymentMethod === "cash on delivery" ? 
-                <button class="btn btn-style-1 btn-primary btn-block"  onClick={onCashPayment}><i class="fe-icon-credit-card"></i>&nbsp;Pay with cash on delivery</button> 
+                <button class="btn btn-style-1 btn-primary btn-block"  onClick={onCashPayment}><i class="fe-icon-credit-card"></i>&nbsp;Place Order</button> 
 
     :     <button onClick={onCheckout} class="btn btn-style-1 btn-primary btn-block" ><i class="fe-icon-credit-card"></i>&nbsp;Paynow</button>
               }

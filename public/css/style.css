@@ -15,7 +15,8 @@ body {
   line-height: 28px;
   color: #6a6a6a;
   font-size: 14px;
-  background-color: #eff2f1; }
+  background-color: #eff2f1;
+ }
 
 a {
   text-decoration: none;
@@ -28,12 +29,17 @@ a {
     color: #2f2f2f;
     text-decoration: none; }
   a.more {
-    font-weight: 600; }
+    font-weight: 600; 
+  }
 
+  .navbar-brand{
+    color: #cf1844 !important;
+  }
 .custom-navbar {
-  background: #3b5d50 !important;
+  background:#193960 !important;
   padding-top: 20px;
   padding-bottom: 20px; }
+
   .custom-navbar .navbar-brand {
     font-size: 32px;
     font-weight: 600; }
@@ -94,9 +100,25 @@ a {
       margin-right: 0px; }
       .custom-navbar .custom-navbar-cta li:first-child {
         margin-right: 20px; }
+.btn-danger{
+ 
+}
+.btn-shop{
+  background: #cf1844;
+  font-weight: 600;
+  padding: 0.9em 2em;
+  border-radius: 30px;
+  border-color: #cf1844;
+  color: #ffffff;
+  text-decoration: none;
 
+}
+.btns-hero{
+  display: flex;
+  gap: 0.5rem;
+}
 .hero {
-  background: #3b5d50;
+  background: #193960 !important;
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {

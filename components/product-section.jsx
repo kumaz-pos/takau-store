@@ -14,9 +14,12 @@ async function ProductSection() {
         <div class="row">
 
             <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
-                <h2 class="mb-4 section-title">Crafted with excellent material.</h2>
-                <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. </p>
-                <p><a href="shop.html" class="btn">Explore</a></p>
+                <h2 class="mb-4 section-title">Crafted with superior automotive-grade materials</h2>
+                <p class="mb-4">
+                Takau Holdings is a leading provider of high-quality car parts, dedicated to supplying the automotive industry with exceptional products and services. With a relentless focus on innovation and customer satisfaction, we strive to deliver solutions that exceed expectations. </p>
+                <p>  <button className='btn-shop'>
+                        Shop Now
+                        </button></p>
             </div> 
         
          {

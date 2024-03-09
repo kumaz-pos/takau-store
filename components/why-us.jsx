@@ -7,7 +7,9 @@ function WhyUs() {
 				<div class="row justify-content-between">
 					<div class="col-lg-6">
 						<h2 class="section-title">Why Choose Us</h2>
-						<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+						<p>
+						By choosing Takau Holdings, you can be confident in the quality and reliability of our car parts, access an extensive range of products, benefit from our commitment to innovation, and experience exceptional customer service. We are dedicated to being your trusted partner in meeting your automotive needs.
+							</p>
 
 						<div class="row my-5">
 							<div class="col-6 col-md-6">
@@ -15,7 +17,8 @@ function WhyUs() {
 									<div class="icon">
 										<img src="images/truck.svg" alt="Image" class="imf-fluid"/>
 									</div>
-									<h3>Fast &amp; Free Shipping</h3>
+									
+									<h3>Quality &amp; and Reliability:</h3>
 									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
 								</div>
 							</div>
@@ -55,7 +58,7 @@ function WhyUs() {
 
 					<div class="col-lg-5">
 						<div class="img-wrap">
-							<img src="images/why-choose-us-img.jpg" alt="Image" class="img-fluid"/>
+							<img src="images/car-part-5.jpg" alt="Image" class="img-fluid"/>
 						</div>
 					</div>
 

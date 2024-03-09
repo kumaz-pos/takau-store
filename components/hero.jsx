@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 function Hero() {
   return (
     <div class="hero">
@@ -7,14 +7,23 @@ function Hero() {
         <div class="row justify-content-between">
             <div class="col-lg-5">
                 <div class="intro-excerpt">
-                    <h1>Modern Interior <span clsas="d-block">Design Studio</span></h1>
-                    <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-                    <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+                    <h1>Takakou Holdings <span clsas="d-block">Car Parts</span></h1>
+                    <p class="mb-4">
+                    Delivering automotive excellence through quality parts and exceptional service, continuously driving innovation and customer satisfaction in the industry.
+
+</p>
+                    <p className='btns-hero'>
+                        
+                        <Link href="/shop" className='btn-shop'>
+                        Shop Now
+                        </Link>
+                        <a href="#" class="btn btn-white-outline">Explore</a>
+                        </p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="hero-img-wrap">
-                    <img src="images/couch.png" class="img-fluid"/>
+                    <img src="images/car-bg.png" class="img-fluid"/>
                 </div>
             </div>
         </div>
