@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import supabase from "@/helpers/supabase";
-export const revalidate = 60
+
 
 async function Navbar() {
     const data= await supabase.from("Cart").select("*");
