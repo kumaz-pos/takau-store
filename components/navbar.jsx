@@ -7,10 +7,11 @@ import supabase from "@/helpers/supabase";
 async function Navbar() {
     const data= await supabase.from("Cart").select("*");
   return (
-    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+    <nav   class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+        
+    <div class="container" >
 
-    <div class="container">
-        <Link class="navbar-brand" href="/">Takakou<span>.</span></Link>
+        <Link class="navbar-brand" href="/"><img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/japan_direct_logo.png" height={100} style={{ opacity: '1' }} width={200} alt="Image" class="img-fluid"/><span>.</span></Link>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
