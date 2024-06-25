@@ -13,7 +13,7 @@ function PopularProduct() {
 							</div>
 							<div class="pt-3">
 								<h3>Car part</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+								<p style={{ color: '#002F63' }}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
 								<p><a href="#">Read More</a></p>
 							</div>
 						</div>
@@ -26,7 +26,7 @@ function PopularProduct() {
 							</div>
 							<div class="pt-3">
 								<h3>Rim</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+								<p style={{ color: '#002F63' }}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
 								<p><a href="#">Read More</a></p>
 							</div>
 						</div>
@@ -39,7 +39,7 @@ function PopularProduct() {
 							</div>
 							<div class="pt-3">
 								<h3>Clutch</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+								<p style={{ color: '#002F63' }}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
 								<p><a href="#">Read More</a></p>
 							</div>
 						</div>

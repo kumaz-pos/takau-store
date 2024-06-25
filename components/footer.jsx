@@ -6,7 +6,7 @@ function Footer() {
     <div class="container relative">
 
         <div class="sofa-img">
-            <img src="images/car.png" alt="Image" class="img-fluid"/>
+            <img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/GD6.png" style={{ marginTop: '150px' }} alt="Image" class="img-fluid"/>
         </div>
 
         <div class="row">
@@ -22,6 +22,7 @@ function Footer() {
                             <input type="email" class="form-control" placeholder="Enter your email"/>
                         </div>
                         <div class="col-auto">
+                            
                             <button class="btn btn-primary">
                                 <span class="fa fa-paper-plane"></span>
                             </button>

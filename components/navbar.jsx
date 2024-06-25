@@ -6,6 +6,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 
 
+
 async function Navbar() {
     const data= await supabase.from("Cart").select("*");
   return (
@@ -24,13 +25,14 @@ async function Navbar() {
         <div class="collapse navbar-collapse" id="navbarsFurni">
             <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item ">
-                    <Link class="nav-link" href="/">Home</Link>
+                    <Link style={{ fontSize: '' }} class="nav-link" href="/">HOME</Link>
                 </li>
                 
                
-                <li><Link class="nav-link" href="/shop">Shop</Link></li>
-                <li><Link class="nav-link" href="/orders">Orders</Link></li>
-            
+                <li><Link class="nav-link" href="/shop">SHOP</Link></li>
+                <li><Link class="nav-link" href="/orders">ORDERS</Link></li>
+                <li><Link class="nav-link" href="/orders">ABOUT</Link></li>
+                <li><Link class="nav-link" href="/orders">CONTACT</Link></li>
             
             </ul>
 

@@ -283,7 +283,7 @@ function About() {
 				<div class="row">
 					<div class="col-lg-8">
 						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"/></span><span>Subscribe to Newsletter</span></h3>
+							<h3 style={{ color: '#002F63' }} class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"/></span><span style={{ color: '#002F63' }}>Subscribe to Newsletter</span></h3>
 
 							<form action="#" class="row g-3">
 								<div class="col-auto">
@@ -294,7 +294,7 @@ function About() {
 								</div>
 								<div class="col-auto">
 									<button class="btn btn-primary">
-										<span class="fa fa-paper-plane"></span>
+										<span style={{ background: '#002F63' }} class="fa fa-paper-plane"></span>
 									</button>
 								</div>
 							</form>

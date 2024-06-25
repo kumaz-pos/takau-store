@@ -9,14 +9,14 @@ async function ProductSection() {
     const data= await supabase.from("Takau").select("*")
   
   return (
-    <div class="product-section">
-    <div class="container">
+    <div  class="product-section">
+    <div  class="container">
         <div class="row">
 
             <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
-                <h2 class="mb-4 section-title">Crafted with superior automotive-grade materials</h2>
-                <p class="mb-4">
-                Takau Holdings is a leading provider of high-quality car parts, dedicated to supplying the automotive industry with exceptional products and services. With a relentless focus on innovation and customer satisfaction, we strive to deliver solutions that exceed expectations. </p>
+                <h2 style={{ color: 'white' }} class="mb-4 section-title">Crafted with superior automotive-grade materials</h2>
+                <p class="mb-4" style={{ color: 'pink',lineHeightStep:'3' }}>
+                Japan Direct is a leading provider of high-quality car parts, dedicated to supplying the automotive industry with exceptional products and services. With a relentless focus on innovation and customer satisfaction, we strive to deliver solutions that exceed expectations. </p>
                 <p>  <button className='btn-shop'>
                         Shop Now
                         </button></p>
