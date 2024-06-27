@@ -6,10 +6,11 @@ async function Page() {
     const {data,error}= await supabase.from("Ecommerce-order").select("*");
 console.log(data);
   return (
-    <>
+    <div>
     <Navbar/>
 <Orders data={data} error={error}/>
-    </>
+</div>
+  
   )
 }
 

@@ -3,32 +3,29 @@ import Navbar from '@/components/navbar'
 import Product from './product'
 import { addToCart } from '@/server-actions/addToCart';
 import supabase from "@/helpers/supabase";
+import { Input } from 'postcss';
+import MyCarousel from '@/components/carousel';
 async function Shop() {
 	const data= await supabase.from("Takau").select("*")
   return (
    <>
    
 	<Navbar/>
+	<div className='bg-white'>
+		<div  className='bg-white px-20 flex flex-row pt-4 justify-between'>
+			<div>
+	<h1 className='text-red-500  w-full bg-white mb-0'>Shop</h1>
+	</div>
+	<div  className=' border-green-600 w-50	0 py-2'>
+	<input className='px-2 py-2 border border-red-400 w-100 bg-transparent	focus:border-red-300 text-red-600 flex rounded-xl ' type='text' placeholder='Enter the car model and part name'/>
+		
+	</div>
+	</div>
 	
-			<div class="hero">
-				<div class="container">
-					<div class="row justify-content-between">
-						<div class="col-lg-5">
-							<div class="intro-excerpt">
-								<h1>Shop</h1>
-							</div>
-						</div>
-						<div class="col-lg-7">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		
 
 		
 
-		<div class="untree_co-section product-section before-footer-section">
+		<div className='mt-none' class="untree_co-section product-section before-footer-section">
 		    <div class="container">
 		      	<div class="row">
 
@@ -55,7 +52,8 @@ async function Shop() {
 			<div class="container relative">
 
 				<div class="sofa-img">
-					<img src="images/car.png" alt="Image" class="img-fluid"/>
+				<img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/Hondafit.png" style={{ marginTop: '150px' }} alt="Image" class="img-fluid"/>
+    
 				</div>
 
 				<div class="row">
@@ -136,6 +134,7 @@ async function Shop() {
 
 			</div>
 		</footer>
+		 </div>
 	
 
    </>

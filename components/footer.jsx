@@ -6,7 +6,7 @@ function Footer() {
     <div class="container relative">
 
         <div class="sofa-img">
-            <img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/GD6.png" style={{ marginTop: '150px' }} alt="Image" class="img-fluid"/>
+            <img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/Hondafit.png" style={{ marginTop: '150px' }} alt="Image" class="img-fluid"/>
         </div>
 
         <div class="row">
@@ -35,7 +35,7 @@ function Footer() {
 
         <div class="row g-5 mb-5">
             <div class="col-lg-4">
-                <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Takakou<span>.</span></a></div>
+                <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Japan Direct<span>.</span></a></div>
                 <p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
 
                 <ul class="list-unstyled custom-social">

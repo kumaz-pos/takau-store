@@ -1,39 +1,30 @@
-
 import React from 'react'
 import supabase from "@/helpers/supabase";
-import { addToCart } from '@/server-actions/addToCart';
-import Product from './product';
-import Dialog from './dialog';
+
+
 async function ProductSection() {
  
-    const data= await supabase.from("Takau").select("*")
+   
   
   return (
-    <div  class="product-section">
-    <div  class="container">
-        <div class="row">
+    <div className='bg-gray-100 py-5 px-20 flex'>
+      <div  className='flex flex-col mr-10 justify-end w-2/3'>
+        <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/GD6.png' />
+      </div>
+      <div className='flex flex-col  w-1/3'>
+      <div>
 
-            <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
-                <h2 style={{ color: 'white' }} class="mb-4 section-title">Crafted with superior automotive-grade materials</h2>
-                <p class="mb-4" style={{ color: 'white',lineHeightStep:'3' }}>
-                Japan Direct is a leading provider of high-quality car parts, dedicated to supplying the automotive industry with exceptional products and services. With a relentless focus on innovation and customer satisfaction, we strive to deliver solutions that exceed expectations. </p>
-                <p>  <button className='btn-shop'>
-                        Shop Now
-                        </button></p>
-            </div> 
-        
-         {
-            data.data.map((item)=>{
-                
-                return <Product key={item.id} item={item} addToCart={addToCart}/>
-            })
-         }
-       
-
-        </div>
+    <h1 className='bg text-xl text-red-500'>Crafted with superior automotive-grade materials</h1>
+    
+    <p className='text-[#002F63]'>Japan Direct is a leading provider of high-quality car parts, dedicated to supplying the automotive industry with exceptional products and services. With a relentless focus on innovation and customer satisfaction, we strive to deliver solutions that exceed expectations.</p>
+    <div className='bg-red-500  w-24 px-2 py-2 text-sm text-white rounded-3xl'>
+   Shop Now
+   </div>
     </div>
-   
-</div>
+    
+  
+   </div>
+   </div>
   )
 }
 

@@ -22,7 +22,8 @@ async function Navbar() {
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsFurni">
+        <div className='fle flex-row justify-between'>
+            <div>
             <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item ">
                     <Link style={{ fontSize: '' }} class="nav-link" href="/">HOME</Link>
@@ -33,19 +34,24 @@ async function Navbar() {
                 <li><Link class="nav-link" href="/orders">ORDERS</Link></li>
                 <li><Link class="nav-link" href="/orders">ABOUT</Link></li>
                 <li><Link class="nav-link" href="/orders">CONTACT</Link></li>
-            
-            </ul>
-
-            <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-            <li>
+                <li>
                 <a class="nav-link" href="#">
                     <IoPersonOutline color='red' size={30} />
                 </a>
             </li>
+            <li><Link class="nav-link" href="/cart"><IoCartOutline color='red' size={30} /></Link></li>
+            <sup  style={{ color: 'white'}}>{data.data.length}
+                    </sup>
              
-                <li><Link class="nav-link" href="/cart"><IoCartOutline color='red' size={30} /><sup  style={{ color: 'red'}}>{data.data.length}
-                    </sup> </Link></li>
+            
             </ul>
+            </div>
+            <div>
+            <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+           
+                
+            </ul>
+            </div>
         </div>
     </div>
         

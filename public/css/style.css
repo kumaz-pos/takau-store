@@ -5,6 +5,7 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 body {
   overflow-x: hidden;
   position: relative; }
@@ -222,7 +223,7 @@ a {
 
 .product-section {
   padding: 7rem 0;
-  background: rgb(33, 63, 104);
+  background:white;
 }
   .product-section .product-item {
     text-align: center;
@@ -295,7 +296,7 @@ a {
       height: 70%; }
 
 .why-choose-section {
-  background-color: #bdb1b1;
+  background-color: #FFFFF0;
   padding: 7rem 0;
  }
   .why-choose-section .img-wrap {
@@ -407,7 +408,7 @@ a {
       top: 8px; }
 
 .popular-product {
-  background-color: #bdb1b1;
+  background-color: #FFFFF0;
   padding: 0 0 7rem 0; }
   .popular-product .product-item-sm h3 {
     font-size: 14px;
