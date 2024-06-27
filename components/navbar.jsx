@@ -33,7 +33,7 @@ async function Navbar() {
                 <li><Link class="nav-link" href="/shop">SHOP</Link></li>
                 <li><Link class="nav-link" href="/orders">ORDERS</Link></li>
                 <li><Link class="nav-link" href="/orders">ABOUT</Link></li>
-                <li><Link class="nav-link" href="/orders">CONTACT</Link></li>
+                <li><Link class="nav-link" href="/contact">CONTACT</Link></li>
                 <li>
                 <a class="nav-link" href="#">
                     <IoPersonOutline color='red' size={30} />
