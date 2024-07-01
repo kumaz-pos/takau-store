@@ -4,11 +4,11 @@ export default function Contact() {
   return (
     <div className='px-10 py-10  bg-white'>
     <div className='flex  flex-col lg:flex-row'>
-        <div className='flex w-1/2 lg:rounded-tl-xl lg:rounded-bl-xl sm:bg-green-400!important   bg-slate-400'>
+        <div className='flex w-full lg:w-1/2 lg:rounded-tl-xl lg:rounded-bl-xl sm:bg-green-400!important   bg-slate-400'>
      <img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/Hondafit.png" style={{ marginTop: '150px' }} alt="Image" class="img-fluid"/>
        
         </div>
-        <div className='flex w-1/2 lg:rounded-tr-xl lg:rounded-br-xl px-4 py-3  bg-red-200'>
+        <div className='flex w-full lg:w-1/2 lg:rounded-tr-xl lg:rounded-br-xl px-4 py-3  bg-red-200'>
 <div className='flex flex-col w-full  '>
 <div className=' text-2xl pt-8 text-red-500'>Contatact Us </div>
 <div>24/7 we are available to answer you</div>

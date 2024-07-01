@@ -11,8 +11,8 @@ function Footer() {
 
         <div class="row">
             <div class="col-lg-8">
-                <div class="subscription-form">
-                    <h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"/></span><span>Subscribe to Newsletter</span></h3>
+                <div class="subscription-form mt-15">
+                    <h3 class="d-flex align-items-center"><span class="me-1"><img  className='mt-20 lg:mt-0' src="images/envelope-outline.svg" alt="Image" class="img-fluid"/></span><span className='mt-20 lg:mt-0'>Subscribe to Newsletter</span></h3>
 
                     <form action="#" class="row g-3">
                         <div class="col-auto">

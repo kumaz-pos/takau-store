@@ -1,63 +1,80 @@
-
-import React from 'react'
-import Link from 'next/link'
+"use client"; // This is a client component 👈🏽
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import supabase from "@/helpers/supabase";
-import { IoPersonOutline } from "react-icons/io5";
-import { IoCartOutline } from "react-icons/io5";
+import { IoPersonOutline, IoCartOutline } from "react-icons/io5";
 
+function Navbar() {
+    const [cartCount, setCartCount] = useState(0);
 
+    useEffect(() => {
+        async function fetchCartData() {
+            const { data } = await supabase.from("Cart").select("*");
+            setCartCount(data.length);
+        }
+        fetchCartData();
+    }, []);
 
-async function Navbar() {
-    const data= await supabase.from("Cart").select("*");
-  return (
-    
-    
-    <nav   class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
-        
-    <div class="container" >
-
-        <Link class="navbar-brand" href="/"><img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/japan_direct_logo_w_background.png" height={100} style={{ opacity: '1' }} width={200} alt="Image" class="img-fluid"/><span></span></Link>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div className='fle flex-row justify-between'>
-            <div>
-            <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-                <li class="nav-item ">
-                    <Link style={{ fontSize: '' }} class="nav-link" href="/">HOME</Link>
-                </li>
-                
-               
-                <li><Link class="nav-link" href="/shop">SHOP</Link></li>
-                <li><Link class="nav-link" href="/orders">ORDERS</Link></li>
-                <li><Link class="nav-link" href="/about">ABOUT</Link></li>
-                <li><Link class="nav-link" href="/contact">CONTACT</Link></li>
-                <li>
-                <a class="nav-link" href="#">
-                    <IoPersonOutline color='red' size={30} />
-                </a>
-            </li>
-            <li><Link class="nav-link" href="/cart"><IoCartOutline color='red' size={30} /></Link></li>
-            <sup  style={{ color: 'white'}}>{data.data.length}
-                    </sup>
-             
-            
-            </ul>
+    return (
+        <nav className="bg-white w-full fixed top-0 text-white">
+            <div className="container mx-auto flex items-center justify-between py-4 px-6">
+                <Link href="/" className="flex items-center">
+                    <img
+                        src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/japan_direct_logo_w_background.png"
+                        height={100}
+                        width={200}
+                        alt="Image"
+                        className="h-10 w-auto"
+                    />
+                </Link>
+                <button
+                    className="md:hidden text-white focus:outline-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarsFurni"
+                    aria-controls="navbarsFurni"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <div className="hidden md:flex space-x-6 items-center">
+                    <Link href="/" className="hover:text-gray-400 no-underline text-[#002F63] ">HOME</Link>
+                    <Link href="/shop" className="hover:text-gray-400 no-underline text-[#002F63] ">SHOP</Link>
+                    <Link href="/orders" className="hover:text-gray-400 no-underline text-[#002F63] ">ORDERS</Link>
+                    <Link href="/about" className="hover:text-gray-400 no-underline text-[#002F63] ">ABOUT</Link>
+                    <Link href="/contact" className="hover:text-gray-400 no-underline text-[#002F63] ">CONTACT</Link>
+                    <Link href="/profile" className="hover:text-gray-400 no-underline text-[#002F63] ">
+                        <IoPersonOutline color='red' size={30} />
+                    </Link>
+                    <Link href="/cart" className="relative hover:text-gray-400">
+                        <IoCartOutline color='red' size={30} />
+                        <span className="absolute top-0 right-0 inline-block h-6 w-6 rounded-full bg-red-600 text-white text-center text-xs">{cartCount}</span>
+                    </Link>
+                </div>
+                <div className="md:hidden">
+                    <div id="navbarsFurni" className="flex flex-col items-start space-y-4 mt-4 md:hidden">
+                        <Link href="/" className="hover:text-[#002F63] text-[#002F63]!important no-underline">HOME</Link>
+                        <Link href="/shop" className="hover:text-gray-400 text-[#002F63] no-underline">SHOP</Link>
+                        <Link href="/orders" className="hover:text-gray-400 text-[#002F63] no-underline">ORDERS</Link>
+                        <Link href="/about" className="hover:text-gray-400 text-[#002F63] no-underline">ABOUT</Link>
+                        <Link href="/contact" className="hover:text-gray-400 text-[#002F63] no-underline">CONTACT</Link>
+                        <Link href="/profile" className="hover:text-gray-400 flex items-center">
+                            <IoPersonOutline color='red' size={30} />
+                            <span className="ml-2">Profile</span>
+                        </Link>
+                        <Link href="/cart" className="relative hover:text-gray-400 flex items-center">
+                            <IoCartOutline color='red' size={30} />
+                            <span className="absolute top-0 right-0 inline-block h-6 w-6 rounded-full bg-red-600 text-white text-center text-xs">{cartCount}</span>
+                            <span className="ml-2">Cart</span>
+                        </Link>
+                    </div>
+                </div>
             </div>
-            <div>
-            <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-           
-                
-            </ul>
-            </div>
-        </div>
-    </div>
-        
-</nav>
-
-  )
+        </nav>
+    );
 }
 
-export default Navbar
+export default Navbar;
