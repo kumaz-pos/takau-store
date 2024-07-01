@@ -1,13 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Navbar from "@/components/navbar";
+
 import Hero from "@/components/hero";
 import ProductSection from "@/components/product-section"
 import WhyUs from "@/components/why-us"
 import WeHelp from "@/components/we-help"
 import PopularProduct from "@/components/popular-product"
-import Testimonials from "@/components/testimonials"
+
 import Footer from "@/components/footer"
+import NavbarContainer from "@/components/navbarContainer";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
 
    
    < >
-    <Navbar />
+    <NavbarContainer />
     <Hero/>
     <ProductSection/>
     <WhyUs/>
