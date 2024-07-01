@@ -34,7 +34,7 @@ function Hero() {
                         Shop Now
                         </Link>
                         
-                        <a href="#" style={{ backgroundColor: '#002F63' }}  class="btn btn-white-outline">Explore</a>
+                        <a href="/shop" style={{ backgroundColor: '#002F63' }}  class="btn btn-white-outline">Explore</a>
                         </p>
                 </div>
             </div>
@@ -49,4 +49,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default Hero 

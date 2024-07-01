@@ -17,8 +17,8 @@ async function ProductSection() {
     <h1 className='bg text-xl text-red-500'>Crafted with superior automotive-grade materials</h1>
     
     <p className='text-[#002F63]'>Japan Direct is a leading provider of high-quality car parts, dedicated to supplying the automotive industry with exceptional products and services. With a relentless focus on innovation and customer satisfaction, we strive to deliver solutions that exceed expectations.</p>
-    <div className='bg-red-500  w-24 px-2 py-2 text-sm text-white rounded-3xl'>
-   Shop Now
+    <div   className='bg-red-500  w-24 px-2 py-2 text-sm text-white rounded-3xl'>
+   <a className='no-underline text-white' href='/shop'>Shop Now</a>
    </div>
     </div>
     

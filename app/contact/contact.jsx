@@ -9,9 +9,12 @@ export default function Contact() {
        
         </div>
         <div className='flex w-full lg:w-1/2 lg:rounded-tr-xl lg:rounded-br-xl px-4 py-3  bg-red-200'>
-<div className='flex flex-col w-full  '>
-<div className=' text-2xl pt-8 text-red-500'>Contatact Us </div>
-<div>24/7 we are available to answer you</div>
+<div className='flex flex-col w-full'>
+<div className=' text-2xl pt-8 text-red-500'>We'd love to hear from you! </div>
+<div>
+
+If you have any questions, comments, or concerns, please feel free to reach out to us using the following contact details. Our team is dedicated to providing you with the best service and support.</div>
+
 
 
 
@@ -19,7 +22,7 @@ export default function Contact() {
 <div className='w-full bg-transparent '>
 <input className='bg-transparent w-full border-blue-500 border placeholder-red-500 rounded-lg text-md py-2 px-2' type='text' placeholder='enter your name'></input>
 </div>
-<div className='w-full md:mt-3 lg:ml-2 bg-transparent '>
+<div className='w-full lg:ml-2 bg-transparent '>
 <input className='bg-transparent w-full border-blue-500 border placeholder-red-500 rounded-lg text-md py-2 px-2' type='text' placeholder='enter your surname'></input>
 </div>
 </div>
@@ -40,6 +43,14 @@ export default function Contact() {
 <div className='w-1/2 rounded-xl mt-4 text-center mb-4 bg-[#002F63] text-white px-2 py-2 '>
     Send
 </div>
+
+<ul class="flex flex-rows justify-between">
+                    <li><a href="#"><span class="fa fa-brands fa-facebook-f text-3xl text-red-500"></span></a></li>
+                    
+                    <li><a href="https://wa.me/"><span color='red'  class="fa fa-brands fa-whatsapp text-3xl text-red-500"></span></a></li>
+                    <li><a href="#"><span class="fa fa-brands fa-instagram text-3xl text-red-500"></span></a></li>
+                   
+                </ul> 
 
 </div>
         </div>
