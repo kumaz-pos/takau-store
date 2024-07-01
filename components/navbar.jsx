@@ -47,7 +47,7 @@ const [nav, setnav] = useState(true)
     </li>
     <li><Link class="nav-link" href="/cart"><IoCartOutline color='red' size={30} /></Link></li>
     <sup  style={{ color: 'white'}}>
-        {data.length}
+      
             </sup>
      
     
