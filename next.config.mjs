@@ -5,6 +5,7 @@ const nextConfig = {
         GITHUB_APP_CLIENT_SECRET:"a6951a845e6a85e67f471477d85fb6d43869e65a",
         NEXTAUTH_SECRET:"mQ46qpFwfE1BHuqMC+qlm19qBAD9fVPgh28werwe3ASFlAfnKjM="
     },
+    ssg: false,
     experimental: {
         serverActions: true,
         appDir: false,
