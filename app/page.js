@@ -8,14 +8,14 @@ import WeHelp from "@/components/we-help"
 import PopularProduct from "@/components/popular-product"
 
 import Footer from "@/components/footer"
-import NavbarContainer from "@/components/navbarContainer";
 
+import NavbarContainer from "@/components/navbarContainer";
 export default function Home() {
   return (
    
 
    
-   < >
+   <body>
     <NavbarContainer />
     <Hero/>
     <ProductSection/>
@@ -24,7 +24,7 @@ export default function Home() {
     
  
     <Footer/>
-   </>
+   </body>
  
   );
 }

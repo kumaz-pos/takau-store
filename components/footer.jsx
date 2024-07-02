@@ -22,9 +22,9 @@ function Footer() {
                             <input type="email" class="form-control" placeholder="Enter your email"/>
                         </div>
                         <div class="col-auto">
-                            
-                            <button class="btn btn-primary">
-                                <span class="fa fa-paper-plane"></span>
+                       
+                            <button class="btn "  style={{ backgroundColor: '#002F63',color:"white" }}>
+                                <span  class="fa fa-paper-plane"></span>
                             </button>
                         </div>
                     </form>

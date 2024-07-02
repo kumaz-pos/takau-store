@@ -3,20 +3,153 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import supabase from "@/helpers/supabase";
 import { IoPersonOutline, IoCartOutline } from "react-icons/io5";
+import { FaUser, FaHeart, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
 
-function Navbar() {
-    const [cartCount, setCartCount] = useState(0);
+const navLinks = [
+    { title: 'Home', url: '/' },
+    { title: 'About', url: '/about' },
+    { title: 'Services', url: '/services' },
+    { title: 'Contact', url: '/contact' }
+];
+
+const iconList = [
+    { icon: <FaUser /> ,url:'/profile'},
+  
+    { icon: <FaShoppingCart />,url:'/cart' },
+];
+
+const bgColor = 'bg-gray-800'; 
+const modalColor = 'bg-white'; 
+const Navbar = ({data}) => {
+  
+    let cartLength=data&& data.data.length
+   
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
-        async function fetchCartData() {
-            const { data } = await supabase.from("Cart").select("*");
-            setCartCount(data.length);
-        }
-        fetchCartData();
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 769);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
-    return (
-        <nav className="bg-white text-white">
+    const toggleModal = () => {
+        setShowModal(!showModal);
+    };
+
+    const handleBarsIconClick = () => {
+        toggleModal();
+    };
+  return  (
+        <>
+            {!isMobile ? (
+                // Laptop Navbar Code Here
+                <nav className={``}>
+                    <div className="flex justify-between mx-auto items-center py-4 px-24">
+                    <Link href="/" className="flex items-center">
+                    <img
+                        src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/japan_direct_logo_w_background.png"
+                        height={100}
+                        width={200}
+                        alt="Image"
+                        className="h-10 w-auto"
+                    />
+                </Link>
+               
+                        <ul className="flex gap-8 md:gap-16 items-center justify-center text-center cursor-pointer">
+                        <Link href="/" className="hover:text-gray-400 no-underline text-[#002F63] ">HOME</Link>
+                    <Link href="/shop" className="hover:text-gray-400 no-underline text-[#002F63]">SHOP</Link>
+                    <Link href="/orders" className="hover:text-gray-400 no-underline text-[#002F63]">ORDERS</Link>
+                    <Link href="/about" className="hover:text-gray-400 no-underline text-[#002F63]">ABOUT</Link>
+                    <Link href="/contact" className="hover:text-gray-400 no-underline text-[#002F63]">CONTACT</Link>
+                        </ul>
+                        <ul className="flex gap-6 items-center cursor-pointer">
+                        <Link href="/cart" style={{
+                            textDecoration:"none"
+                        }} className="">
+                            <p className='flex gap-2 justify-between  w-full'>
+                            <IoCartOutline color='red' size={30} />
+                        <sup className="  text-red  " style={{
+                            fontSize:"0.9rem"
+                        }}>{cartLength}</sup>
+                    
+                            </p>
+                      
+                    </Link>
+                           
+                        </ul>
+                    </div>
+                </nav>
+            ) : (
+                // Mobile Navbar Code Here
+                <nav className={` py-4 px-4`}>
+                    <div className="mx-auto flex justify-between items-center ">
+                    <Link href="/" className="flex items-center">
+                    <img
+                        src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/japan_direct_logo_w_background.png"
+                        height={100}
+                        width={200}
+                        alt="Image"
+                        className="h-10 w-auto"
+                    />
+                </Link>
+                        <div className="flex justify-end items-center gap-6  cursor-pointer">
+                        
+  
+ 
+                        <Link href="/shop" className=""><FaUser/></Link>
+                    <Link href="/cart" className="flex" style={{
+                        alignItems:"center",
+                        gap:"0.4rem",
+                        textDecoration:"none"
+                    }}>
+                          <FaShoppingCart size={15}/>
+                    <sup className="  text-red  " style={{
+                            fontSize:"0.9rem"
+                        }}>{cartLength}</sup>
+                    
+                  
+                   
+                    </Link>
+                            <FaBars onClick={handleBarsIconClick} className=" cursor-pointer" />
+                        </div>
+                    </div>
+                    {showModal && (
+                        <div className="fixed inset-0 z-10 flex justify-center items-center">
+                            <div className={`absolute inset-0 ${modalColor}`} />
+                            <FaTimes
+                                className="absolute top-6 right-4  cursor-pointer"
+                                onClick={toggleModal}
+                                style={{ fontSize: '16px' }}
+                            />
+                            <div className="relative bg-white-900 w-full">
+                                <div className="flex flex-col gap-8 items-center justify-center h-full">
+                                <ul className="flex flex-col gap-8 md:gap-16 items-center justify-center text-center cursor-pointer">
+                        <Link href="/" className="hover:text-gray-400 no-underline text-[#002F63] ">HOME</Link>
+                    <Link href="/shop" className="hover:text-gray-400 no-underline text-[#002F63]">SHOP</Link>
+                    <Link href="/orders" className="hover:text-gray-400 no-underline text-[#002F63]">ORDERS</Link>
+                    <Link href="/about" className="hover:text-gray-400 no-underline text-[#002F63]">ABOUT</Link>
+                    <Link href="/contact" className="hover:text-gray-400 no-underline text-[#002F63]">CONTACT</Link>
+                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </nav>
+            )}
+        </>
+    );
+}
+
+export default Navbar;
+{
+  /**    <nav className="bg-white text-white">
             <div className="container mx-auto flex items-center justify-between py-4 px-6">
                 <Link href="/" className="flex items-center">
                     <img
@@ -73,8 +206,5 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-        </nav>
-    );
+        </nav> */
 }
-
-export default Navbar;
