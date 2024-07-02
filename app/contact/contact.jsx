@@ -10,7 +10,7 @@ export default function Contact() {
         </div>
         <div className='flex w-full lg:w-1/2 lg:rounded-tr-xl lg:rounded-br-xl px-4 py-3  bg-red-200'>
 <div className='flex flex-col w-full'>
-<div className=' text-2xl pt-8 text-red-500'>We'd love to hear from you! </div>
+<div className=' text-2xl pt-8 text-red-600'>We'd love to hear from you! </div>
 <div>
 
 If you have any questions, comments, or concerns, please feel free to reach out to us using the following contact details. Our team is dedicated to providing you with the best service and support.</div>
