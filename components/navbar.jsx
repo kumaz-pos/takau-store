@@ -5,32 +5,25 @@ import supabase from "@/helpers/supabase";
 import { IoPersonOutline, IoCartOutline } from "react-icons/io5";
 import { FaUser, FaHeart, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
 
-const navLinks = [
-    { title: 'Home', url: '/' },
-    { title: 'About', url: '/about' },
-    { title: 'Services', url: '/services' },
-    { title: 'Contact', url: '/contact' }
-];
 
-const iconList = [
-    { icon: <FaUser /> ,url:'/profile'},
-  
-    { icon: <FaShoppingCart />,url:'/cart' },
-];
-
-const bgColor = 'bg-gray-800'; 
 const modalColor = 'bg-white'; 
 const Navbar = ({data}) => {
   
     let cartLength=data&& data.data.length
    
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
+    const [isMobile, setIsMobile] = useState( typeof window !== "undefined" ? window.innerWidth < 780: 0);
+  /*
+    const [screenWidth, setScreenWidth] = useState(
+        typeof window !== "undefined" ? window.innerWidth < 769: 0,
+      );
+      */
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 769);
         };
+
 
         window.addEventListener('resize', handleResize);
 
@@ -70,6 +63,17 @@ const Navbar = ({data}) => {
                     <Link href="/contact" className="hover:text-gray-400 no-underline text-[#002F63]">CONTACT</Link>
                         </ul>
                         <ul className="flex gap-6 items-center cursor-pointer">
+                        <Link href="/" style={{
+                            textDecoration:"none"
+                        }} className="">
+                            <p className='flex gap-2 justify-between  w-full'>
+                            <IoPersonOutline color='red' size={30} />
+                       
+                    
+                            </p>
+                      
+                    </Link>
+                           
                         <Link href="/cart" style={{
                             textDecoration:"none"
                         }} className="">
@@ -82,7 +86,7 @@ const Navbar = ({data}) => {
                             </p>
                       
                     </Link>
-                           
+                       
                         </ul>
                     </div>
                 </nav>
@@ -107,7 +111,10 @@ const Navbar = ({data}) => {
                     <Link href="/cart" className="flex" style={{
                         alignItems:"center",
                         gap:"0.4rem",
-                        textDecoration:"none"
+                        textDecoration:"none",
+                        color:"red"
+
+
                     }}>
                           <FaShoppingCart size={15}/>
                     <sup className="  text-red  " style={{

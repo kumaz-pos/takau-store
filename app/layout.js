@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   
   return (
-    <NextAuthProvider  >
+   
 
     
     <html  lang="en">
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
     </html>
-    </NextAuthProvider>
+ 
   );
 
 }
