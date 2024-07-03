@@ -14,8 +14,7 @@ import QuantityComponent from './quantityComponent'
 
 
  function Cart({data,error}) {
-  console.log(data);
-
+ 
 const [quantity, setquantity] = useState(0);
 const [returnValue, setreturnValue] = useState("");
 

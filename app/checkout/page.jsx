@@ -2,13 +2,10 @@
 
 import React from 'react'
 import Navbar from '@/components/navbar'
-import { useSession,signIn,signOut } from 'next-auth/react'
+
 import {redirect} from "next/navigation"
 function Checkout() {
-  const {data:session,status}=useSession()
-  if (!session) {
-    redirect("/signin")
- }else{
+ 
   return (
     <>
     <Navbar/>
@@ -301,6 +298,6 @@ function Checkout() {
    )
  }
 
-}
+
 
 export default Checkout
