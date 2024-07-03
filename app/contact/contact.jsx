@@ -13,7 +13,14 @@ export default function Contact() {
 <div className=' text-2xl pt-8 text-red-600'>We'd love to hear from you! </div>
 <div>
 
-If you have any questions, comments, or concerns, please feel free to reach out to us using the following contact details. Our team is dedicated to providing you with the best service and support.</div>
+If you have any questions, comments, or concerns, please feel free to reach out to us using the following contact details.
+<p className='text-[#002F63]'>94 Prince Edward Street<br></br>
+Milton Park Harare Zimbabwe</p>
+<p>
+  <a href="tel:0786444606" className='no-underline'>0786444606</a>
+</p>
+
+</div>
 
 
 

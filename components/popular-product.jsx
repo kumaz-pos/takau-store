@@ -9,9 +9,9 @@ function PopularProduct() {
 					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 						<div class="product-item-sm d-flex">
 							<div class="thumbnail">
-								<img src="images/car-part-4.png" alt="Image" class="img-fluid"/>
+								<img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/parts_removebg_preview.png" alt="Image" width={150} height={100} class="img-fluid"/>
 							</div>
-							<div class="pt-3">
+							<div class="pt-0">
 								<h3>Parts</h3>
 								<p style={{ color: '#002F63' }}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
 								<p><a href="#">Read More</a></p>
@@ -22,9 +22,9 @@ function PopularProduct() {
 					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 						<div class="product-item-sm d-flex">
 							<div class="thumbnail">
-								<img src="images/car-part-5.jpg" alt="Image" class="img-fluid"/>
+								<img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/spares_removebg_preview.png" alt="Image" width={150} height={100} className='mt-5'  class="img-fluid"/>
 							</div>
-							<div class="pt-3">
+							<div class="pt-0">
 								<h3>Body Parts</h3>
 								<p style={{ color: '#002F63' }}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
 								<p><a href="#">Read More</a></p>
@@ -35,9 +35,9 @@ function PopularProduct() {
 					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 						<div class="product-item-sm d-flex">
 							<div class="thumbnail">
-								<img src="images/clutch.png" alt="Image" class="img-fluid"/>
+								<img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/engine_removebg_preview.png?t=2024-07-03T09%3A11%3A38.202Z" alt="Image" width={150} height={100}  class="img-fluid"/>
 							</div>
-							<div class="pt-3">
+							<div class="pt-0">
 								<h3>Gear Box</h3>
 								<p style={{ color: '#002F63' }}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
 								<p><a href="#">Read More</a></p>
