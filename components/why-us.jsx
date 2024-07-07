@@ -23,7 +23,7 @@ function WhyUs() {
 									</div>
 									
 									<h3>Quality &amp; and Reliability:</h3>
-									<p style={{ color: '#002F63' }}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p style={{ color: '#002F63' }}>At Japan Direct, we are committed to providing our customers with the highest quality car parts available. We source our parts directly from Japan, ensuring that you receive genuine OEM parts or high-quality aftermarket parts that meet the strictest standards. Our parts are rigorously tested to ensure that they meet or exceed the performance and durability of the original parts.	</p>
 								</div>
 							</div>
 
@@ -33,7 +33,7 @@ function WhyUs() {
 										<LuShoppingBag size={40} color='red' />
 									</div>
 									<h3>Easy to Shop</h3>
-									<p style={{ color: '#002F63' }}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p style={{ color: '#002F63' }}>We understand that shopping for car parts can be a daunting task. That's why we've made our website easy to navigate and use. You can browse our extensive catalog by car make, model, and year, or you can use our search bar to find the specific parts you need. We also offer a variety of helpful guides and resources to help you make informed decisions..</p>
 								</div>
 							</div>
 
@@ -43,7 +43,7 @@ function WhyUs() {
 										<HiOutlineSupport size={40} color='red'/>
 									</div>
 									<h3>24/7 Support</h3>
-									<p style={{ color: '#002F63' }}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p style={{ color: '#002F63' }}>Our knowledgeable and friendly customer support team is available 24/7 to answer your questions and help you find the right parts for your car. We can also provide you with installation instructions and troubleshooting assistance.</p>
 								</div>
 							</div>
 
@@ -53,7 +53,7 @@ function WhyUs() {
 										<FaRepeat size={40} color='red'/>
 									</div>
 									<h3>Hassle Free Returns</h3>
-									<p style={{ color: '#002F63' }}>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p style={{ color: '#002F63' }}>We are confident that you will be satisfied with your purchase from Japan Direct. However, if you are not happy with your order for any reason, you can return it for a full refund within 30 days of purchase. We make the return process easy and hassle-free so that you can shop with confidence.</p>
 								</div>
 							</div>
 

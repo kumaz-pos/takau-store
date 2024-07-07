@@ -13,7 +13,7 @@ function PopularProduct() {
 							</div>
 							<div class="pt-0">
 								<h3>Parts</h3>
-								<p style={{ color: '#002F63' }}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+								<p style={{ color: '#002F63' }}>Air intakes, exhaust systems, suspension components, wheels, brake pads, performance chips, </p>
 								<p><a href="#">Read More</a></p>
 							</div>
 						</div>
@@ -26,7 +26,7 @@ function PopularProduct() {
 							</div>
 							<div class="pt-0">
 								<h3>Body Parts</h3>
-								<p style={{ color: '#002F63' }}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+								<p style={{ color: '#002F63' }}>These include parts like doors, fenders, hoods, bumpers, and spoilers. </p>
 								<p><a href="#">Read More</a></p>
 							</div>
 						</div>
@@ -39,7 +39,7 @@ function PopularProduct() {
 							</div>
 							<div class="pt-0">
 								<h3>Gear Box</h3>
-								<p style={{ color: '#002F63' }}>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+								<p style={{ color: '#002F63' }}>Japan Direct offers a wide variety of gearboxes for all cars from Japan.</p>
 								<p><a href="#">Read More</a></p>
 							</div>
 						</div>

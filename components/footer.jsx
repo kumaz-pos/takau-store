@@ -22,9 +22,9 @@ function Footer() {
                             <input type="email" class="form-control" placeholder="Enter your email"/>
                         </div>
                         <div class="col-auto">
-                       
-                            <button class="btn "  style={{ backgroundColor: '#002F63',color:"white" }}>
-                                <span  class="fa fa-paper-plane"></span>
+                            
+                            <button class="btn btn-primary">
+                                <span class="fa fa-paper-plane"></span>
                             </button>
                         </div>
                     </form>
@@ -36,11 +36,16 @@ function Footer() {
         <div class="row g-5 mb-5">
             <div class="col-lg-4">
                 <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Japan Direct<span>.</span></a></div>
-                <p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+                <p class="mb-4">If you have any questions, comments, or concerns, please feel free to reach out to us using the following contact details.
+94 Prince Edward Street
+Milton Park Harare Zimbabwe
+
+</p>
 
                 <ul class="list-unstyled custom-social">
                     <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-                    <li><a href="#"><span class="fa fa-brands fa-whatsapp"></span></a></li>
+                    
+                    <li><a href="https://wa.me/"><span class="fa fa-brands fa-whatsapp"></span></a></li>
                     <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
                    
                 </ul>

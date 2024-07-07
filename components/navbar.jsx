@@ -43,7 +43,7 @@ const Navbar = ({data}) => {
         <>
             {!isMobile ? (
                 // Laptop Navbar Code Here
-                <nav className={``}>
+                <nav className={`bg-white`}>
                     <div className="flex justify-between mx-auto items-center py-4 px-24">
                     <Link href="/" className="flex items-center">
                     <img
