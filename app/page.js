@@ -14,7 +14,7 @@ export default function Home() {
   return (
    
 
-   
+   <html>
    <body>
     <NavbarContainer />
     <Hero/>
@@ -25,6 +25,7 @@ export default function Home() {
  
     <Footer/>
    </body>
+   </html>
  
   );
 }

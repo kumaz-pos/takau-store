@@ -42,8 +42,8 @@ function Navbar() {
                 </button>
                 <div className="hidden md:flex space-x-6 items-center">
                     <Link href="/" className="hover:text-gray-400 no-underline text-[#002F63] ">HOME</Link>
-                    <Link href="/shop" className="hover:text-gray-400 no-underline text-[#002F63] ">SHOP</Link>
-                    <Link href="/orders" className="hover:text-gray-400 no-underline text-[#002F63] ">ORDERS</Link>
+                    <Link href="/car" className="hover:text-gray-400 no-underline text-[#002F63] ">SHOP</Link>
+                    <Link href="/orders" className="hover:text-gray-400 no-underline text-[#002F63] ">CAR</Link>
                     <Link href="/about" className="hover:text-gray-400 no-underline text-[#002F63] ">ABOUT</Link>
                     <Link href="/contact" className="hover:text-gray-400 no-underline text-[#002F63] ">CONTACT</Link>
                     <Link href="/profile" className="hover:text-gray-400 no-underline text-[#002F63] ">
@@ -57,7 +57,7 @@ function Navbar() {
                 <div className="md:hidden">
                     <div id="navbarsFurni" className="flex flex-col items-start space-y-4 mt-4 md:hidden">
                         <Link href="/" className="hover:text-[#002F63] text-[#002F63]!important no-underline">HOME</Link>
-                        <Link href="/shop" className="hover:text-gray-400 text-[#002F63] no-underline">SHOP</Link>
+                        <Link href="/car" className="hover:text-gray-400 text-[#002F63] no-underline">CAR</Link>
                         <Link href="/orders" className="hover:text-gray-400 text-[#002F63] no-underline">ORDERS</Link>
                         <Link href="/about" className="hover:text-gray-400 text-[#002F63] no-underline">ABOUT</Link>
                         <Link href="/contact" className="hover:text-gray-400 text-[#002F63] no-underline">CONTACT</Link>

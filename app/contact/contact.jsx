@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
   return (
     <div className='px-10 py-10  bg-white'>
-    <div className='flex  flex-col lg:flex-row'>
+    <div className='lg:px-20 flex flex-col md:flex-row '>
         <div className='flex w-full lg:w-1/2 lg:rounded-tl-xl lg:rounded-bl-xl sm:bg-green-400!important   bg-slate-400'>
      <img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/Hondafit.png" style={{ marginTop: '150px' }} alt="Image" class="img-fluid"/>
        

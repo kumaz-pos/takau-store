@@ -5,11 +5,11 @@ import MyCarousel from '@/components/carousel'
 export default function About() {
   return (
     <div>
-    <div className='bg-gray-100 py-6  px-2 lg:px-20 flex flex-col lg:flex-row'>
+    <div className='bg-gray-100 py-6  px-2 lg:px-20 flex flex-col md:flex-row'>
     <div  className='flex flex-col mr-10 justify-end w-full'>
       <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/parts_removebg_preview.png' />
     </div>
-    <div className='flex flex-col w-full  lg:w-full'>
+    <div className='flex lg:flex-col w-full  lg:w-full'>
     <div className='bg-red-200 rounded-md'>
 
   <h1 className='pb-4 px-6 text-3xl text-red-500 pt-4'>About</h1>
@@ -28,9 +28,9 @@ Customer satisfaction is at the heart of everything we do at Japan Direct. We un
  </div>
  </div>
 
-<div className='bg-gray-100 flex-col lg:flex-row py-5 lg:px-20 px-2 flex'>
+<div className='bg-gray-100 py-6  px-2 lg:px-20 flex flex-row lg:flex-row'>
 
-<div className='flex lg:flex-col flex-row w-full rounded-md bg-red-200  lg:w-2/3'>
+<div className='flex lg:flex-col flex-row w-full rounded-md bg-red-200 '>
 <div className='bg-red-100 rounded-md'>
 
 <h1 className='bg  text-red-500  px-6 pb-6 text-3xl pt-4'>Our Mission</h1>
@@ -42,7 +42,7 @@ Customer satisfaction is at the heart of everything we do at Japan Direct. We un
 
 </div>
 
-<div  className='flex flex-col mr-10 justify-end w-ull lg:w-full'>
+<div  className='flex flex-col mr-10 justify-end w-full lg:w-full'>
   <MyCarousel  />
 </div>
 
@@ -51,7 +51,7 @@ Customer satisfaction is at the heart of everything we do at Japan Direct. We un
 
 
 
-<div className='py-5 px-2 flex-col lg:flex-row lg:px-20 flex'>
+<div className='py-5 px-2 lg:px-20  flex flex-row lg:flex-row'>
 
 <div  className='flex flex-col mr-0 lg:mr-10 justify-end w-full lg:w-2/3'>
   <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/Nissan.png' />

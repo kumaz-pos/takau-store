@@ -7,7 +7,7 @@ async function ProductSection() {
    
   
   return (
-    <div className='bg-red-100 py-5 px-4 lg-px-20 flex flex-col lg:flex-row'>
+    <div className='bg-red-100 py-5 px-4 lg-px-20 flex flex-col md:flex-row'>
       <div  className='flex flex-col mr-0 lg-mr-10 justify-end w-full lg-w-2/3'>
         <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/parts_removebg_preview.png' />
       </div>
