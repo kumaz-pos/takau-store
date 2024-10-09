@@ -7,13 +7,14 @@ export default function Car() {
   return (
    
     <div className='md:px-24 px-4'> 
-      <div className='py-10 text-black text-2xl'>
+     <div className='py-10 text-black text-2xl'>
         Buy Your Car
       </div>
-      <div className='px-2 flex justify-between w-full flex-col md:flex-row '>
+     
+      <div className='px-2 flex justify-between w-full flex-col md:flex-row'>
       <div className='w-80 h-auto pb-2 rounded-tr-lg rounded-tl-lg border border-gray-800'>
     <div  className='flex flex-col mr-10 justify-end w-full'>
-      <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/parts_removebg_preview.png' />
+      <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/20240723_164306%20(1).jpg' />
     </div>
     <div className='px-2 text-black'>
     <div className='font-bold'>
@@ -27,7 +28,7 @@ export default function Car() {
 </div>
 
 <div>
-<div className='text-center'>2006
+<div className='text-center'>2014
 </div>
 <div className='border bg-gray-200 text-center h-10 w-20 items-center flex justify-center'>Model</div>
 </div>
@@ -42,7 +43,7 @@ export default function Car() {
     <div className='flex mt-10 justify-between'>
     <div className='bg-red-400 px-2 py-2 text-white rounded-xl'>Contact Us Now</div>
     <div className='flex justify-between mt-2 '>
-    <div><MdOutlineLocalPhone  className='size-8'  /></div>
+    <div><a href="tel:0786444606"> <MdOutlineLocalPhone  className='size-8'  /></a></div>
     <div className='mx-4'> <MdOutlineMailOutline className='size-8' /></div>
     <div><MdOutlineWhatsapp className='size-8'  /></div>
     </div>
@@ -50,9 +51,9 @@ export default function Car() {
     </div>
     </div>
 
-    <div className='w-80 h-auto pb-2 rounded-tr-lg my-10 lg:my-0 lg:mx-10 rounded-tl-lg border border-gray-800'>
+    <div className='w-80 h-auto pb-2 rounded-tr-lg md:mx-10 md:my-0 my-1 rounded-tl-lg border border-gray-800'>
     <div  className='flex flex-col mr-10 justify-end w-full'>
-      <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/parts_removebg_preview.png' />
+      <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/20240723_165644.jpg' />
     </div>
     <div className='px-2 text-black'>
     <div className='font-bold'>
@@ -61,12 +62,12 @@ export default function Car() {
     <div className='flex justify-between'>
 
 <div>
-<div>Toyota Aqua</div>
+<div>Honda Fit Hybrid</div>
 <div className='border bg-gray-200 text-center h-10 w-20 items-center flex justify-center'>Model</div>
 </div>
 
 <div>
-<div className='text-center'>2006
+<div className='text-center'>2014
 </div>
 <div className='border bg-gray-200 text-center h-10 w-20 items-center flex justify-center'>Model</div>
 </div>
@@ -81,7 +82,7 @@ export default function Car() {
     <div className='flex mt-10 justify-between'>
     <div className='bg-red-400 px-2 py-2 text-white rounded-xl'>Contact Us Now</div>
     <div className='flex justify-between mt-2 '>
-    <div><MdOutlineLocalPhone  className='size-8'  /></div>
+    <div><a href="tel:0786444606"> <MdOutlineLocalPhone  className='size-8'  /></a></div>
     <div className='mx-4'> <MdOutlineMailOutline className='size-8' /></div>
     <div><MdOutlineWhatsapp className='size-8'  /></div>
     </div>
@@ -91,7 +92,7 @@ export default function Car() {
 
     <div className='w-80 h-auto pb-2 rounded-tr-lg rounded-tl-lg border border-gray-800'>
     <div  className='flex flex-col mr-10 justify-end w-full'>
-      <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/parts_removebg_preview.png' />
+      <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/20240723_170411.jpg' />
     </div>
     <div className='px-2 text-black'>
     <div className='font-bold'>
@@ -100,12 +101,12 @@ export default function Car() {
     <div className='flex justify-between'>
 
 <div>
-<div>Toyota Aqua</div>
+<div>Honda Fit Hybrid</div>
 <div className='border bg-gray-200 text-center h-10 w-20 items-center flex justify-center'>Model</div>
 </div>
 
 <div>
-<div className='text-center'>2006
+<div className='text-center'>2014
 </div>
 <div className='border bg-gray-200 text-center h-10 w-20 items-center flex justify-center'>Model</div>
 </div>
@@ -120,7 +121,7 @@ export default function Car() {
     <div className='flex mt-10 justify-between'>
     <div className='bg-red-400 px-2 py-2 text-white rounded-xl'>Contact Us Now</div>
     <div className='flex justify-between mt-2 '>
-    <div><MdOutlineLocalPhone  className='size-8'  /></div>
+    <div><a href="tel:0786444606"> <MdOutlineLocalPhone  className='size-8'  /></a></div>
     <div className='mx-4'> <MdOutlineMailOutline className='size-8' /></div>
     <div><MdOutlineWhatsapp className='size-8'  /></div>
     </div>
