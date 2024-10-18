@@ -28,7 +28,7 @@ Customer satisfaction is at the heart of everything we do at Japan Direct. We un
  </div>
  </div>
 
-<div className='bg-gray-100 py-6  px-2 lg:px-20 flex flex-row lg:flex-row'>
+<div className='bg-gray-100 py-6  px-2 lg:px-20 flex flex-col md:flex-row'>
 
 <div className='flex lg:flex-col flex-row w-full rounded-md bg-red-200 '>
 <div className='bg-red-100 rounded-md'>
@@ -51,7 +51,7 @@ Customer satisfaction is at the heart of everything we do at Japan Direct. We un
 
 
 
-<div className='py-5 px-2 lg:px-20  flex flex-row lg:flex-row'>
+<div className='py-5 px-2 lg:px-20  flex flex-col md:flex-row'>
 
 <div  className='flex flex-col mr-0 lg:mr-10 justify-end w-full lg:w-2/3'>
   <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/Nissan.png' />
