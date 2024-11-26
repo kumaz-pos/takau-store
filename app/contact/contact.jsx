@@ -52,10 +52,10 @@ Milton Park Harare Zimbabwe</p>
 </div>
 
 <ul class="flex flex-rows justify-between">
-                    <li><a href="#"><span class="fa fa-brands fa-facebook-f text-3xl text-red-500"></span></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61563883206947"><span class="fa fa-brands fa-facebook-f text-3xl text-red-500"></span></a></li>
                     
-                    <li><a href="https://wa.me/"><span color='red'  class="fa fa-brands fa-whatsapp text-3xl text-red-500"></span></a></li>
-                    <li><a href="#"><span class="fa fa-brands fa-instagram text-3xl text-red-500"></span></a></li>
+                    <li><a href="https://wa.me/+263775756688"><span color='red'  class="fa fa-brands fa-whatsapp text-3xl text-red-500"></span></a></li>
+                    <li><a href="https://www.instagram.com/japan.direct_zim/profilecard/?igsh=N2ZhNHc1aGx0cnAw"><span class="fa fa-brands fa-instagram text-3xl text-red-500"></span></a></li>
                    
                 </ul> 
 
