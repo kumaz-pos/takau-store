@@ -58,6 +58,7 @@ const Navbar = ({data}) => {
                         <ul className="flex gap-8 md:gap-16 items-center justify-center text-center cursor-pointer">
                         <Link href="/" className="hover:text-gray-400 no-underline text-[#002F63] ">HOME</Link>
                     <Link href="/shop" className="hover:text-gray-400 no-underline text-[#002F63]">PARTS</Link>
+                    <Link href="/parts" className="hover:text-gray-400 no-underline text-[#002F63]">PARTS</Link>
                     <Link href="/cars" className="hover:text-gray-400 no-underline text-[#002F63]">CARS</Link>
                     <Link href="/about" className="hover:text-gray-400 no-underline text-[#002F63]">ABOUT</Link>
                     <Link href="/contact" className="hover:text-gray-400 no-underline text-[#002F63]">CONTACT</Link>
