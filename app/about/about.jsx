@@ -7,7 +7,7 @@ export default function About() {
     <div>
     <div className='bg-gray-100 py-6  px-2 lg:px-20 flex flex-col md:flex-row'>
     <div  className='flex flex-col mr-10 justify-end w-full'>
-      <img src='https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/parts_removebg_preview.png' />
+      <img src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/parts-removebg-preview__1_.png"/>
     </div>
     <div className='flex lg:flex-col w-full  lg:w-full'>
     <div className='bg-red-200 rounded-md'>

@@ -48,8 +48,8 @@ const Navbar = ({data}) => {
                     <Link href="/" className="flex items-center">
                     <img
                         src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/japan_direct_logo_w_background.png"
-                        height={100}
-                        width={200}
+                        height={600}
+                        width={600}
                         alt="Image"
                         className="h-10 w-auto"
                     />
@@ -97,8 +97,8 @@ const Navbar = ({data}) => {
                     <Link href="/" className="flex items-center">
                     <img
                         src="https://zpuplawsjodqxxfqxchz.supabase.co/storage/v1/object/public/Car%20parts/japan_direct_logo_w_background.png"
-                        height={100}
-                        width={200}
+                        height={600}
+                        width={600}
                         alt="Image"
                         className="h-10 w-auto"
                     />

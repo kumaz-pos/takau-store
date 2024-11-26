@@ -62,7 +62,7 @@ function WhyUs() {
 
 					<div class="col-lg-5">
 						<div class="img-wrap">
-							<img src="images/car-part-5.jpg" alt="Image" class="img-fluid"/>
+							<img src="https://static.vecteezy.com/system/resources/previews/036/048/444/non_2x/ai-generated-car-engine-isolated-on-a-transparent-background-ai-png.png" alt="Image" class="img-fluid"  />
 						</div>
 					</div>
 
