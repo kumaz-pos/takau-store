@@ -18,7 +18,7 @@ export default function Product() {
     </div>
     <div className='px-2 text-black'>
     <div className='font-bold'>
-      $9000.00
+      0000.00
     </div>
     <div className='flex justify-between'>
 
@@ -57,7 +57,7 @@ export default function Product() {
     </div>
     <div className='px-2 text-black'>
     <div className='font-bold'>
-      $9000.00
+      0000.00
     </div>
     <div className='flex justify-between'>
 
@@ -96,7 +96,7 @@ export default function Product() {
     </div>
     <div className='px-2 text-black'>
     <div className='font-bold'>
-      $9000.00
+      $0000.00
     </div>
     <div className='flex justify-between'>
 
